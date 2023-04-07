@@ -1,0 +1,30 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: @color-primario;
+    color: @color-claro;
+  }
+
+  h2 {
+    color: @color-secundario;
+  }
+
+  .intro {
+    background: @color-secundario;
+  }
+
+  .caja {
+    background: @color-secundario;
+  }
+
+  .caja {
+    &__contenido {
+      background-color: @color-secundario;
+    }
+    span {
+      color: @color-claro;
+    }
+    a {
+      color: fade(@color-claro, 50%);
+    }
+  }
+}
