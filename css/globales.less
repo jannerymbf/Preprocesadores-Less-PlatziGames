@@ -7,6 +7,17 @@
 @fuente2: 'Oswald', sans-serif;
 @fuente-base: 18px;
 
+// Creando mixins
+.sombra-caja {
+	box-shadow: 0 5px 15px 0 fade(@color-primario, 50%);
+}
+
+.oswald {
+	font-family: @fuente2;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
 *{
 	box-sizing: border-box;
 }
@@ -17,7 +28,6 @@ body {
 }
 
 h1,h2,h3 {
-	font-family: @fuente2;
-	text-transform: uppercase;
 	margin: 0;
+	.oswald;
 }
